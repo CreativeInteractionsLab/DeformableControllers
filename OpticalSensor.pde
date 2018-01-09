@@ -41,7 +41,7 @@ void draw()
     R1 = AnalogInputToResistance(a0, Vin, R2);
     //draw the progress
     fill(255);
-    rect(10, 240, 492*Vout/Vin, 24);
+    rect(10, 240, 492*(1-Vout/Vin), 24);
     println("Vout: "+Vout+" R1 (sensor): "+R1);
   }
 }
